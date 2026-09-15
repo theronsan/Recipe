@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pannkakor – Recept</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
-        <img src="assets/images/hero-pannkakor.jpg" alt="En bild på pannkakor med grädde och jordgubbar"></header>
+        <picture class="hero">
+            <source media="(min-width:640px)" srcset="assets/images/hero-pannkakor.jpg">
+            <img src="assets/images/hero-pannkakor4x5.jpg" alt="En bild på pannkakor med grädde och jordgubbar">
+        </picture>
+    </header>
     <main>
         <article>
             <h1>Enkelt recept på pannkakor</h1>
@@ -36,8 +41,21 @@
                 </ol>
             </section>
             <section class="tips">
-                <h3>Serveringsförslag</h3>
-                <div class="grid"></div>
+                <h2>Serveringsförslag</h2>
+                <div class="grid">
+                    <div class="grid-item">
+                        <picture class="hero">
+                            <source media="(min-width:640px)" srcset="assets/images/pannkakor-1.jpg">
+                            <img src="assets/images/pannkakor1-4x5.jpg" alt="Pannkakor">
+                        </picture>
+                    </div>
+                    <div class="grid-item">
+                        <picture class="hero">
+                            <source media="(min-width:640px)" srcset="assets/images/pannkakor-2.jpg">
+                            <img src="assets/images/pannkakor2-4x5.jpg" alt="Pannkakor med annanas och grädde">
+                        </picture>
+                    </div>
+                </div>
             </section>
         </article>
     </main>

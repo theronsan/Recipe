@@ -1,0 +1,90 @@
+/* Padding och border inkluderas i elementets totala storlek */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Nollställer margin och padding på alla element */
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+    font-size: 16px;
+}
+/* Kör med Arial istället för Open Sans */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: #dcacac;
+  color: #000;
+  padding-bottom: 4rem;
+}
+/* Lite mindre radavstånd på rubriker */
+h1, h2 {
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+/* Gör så att bilder inte blir större än sin container */
+img, picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+header {
+    max-height: 500px;
+    overflow: hidden;
+}
+main {
+    padding: 3rem 1rem 4rem;
+    margin: 0 auto;
+    max-width: 1280px;
+    background-color: #fff;
+}
+picture.hero {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+.intro {
+    background-color: #EBEBEB;
+    padding: 1rem;
+
+    p {
+        margin-bottom: 0;
+    }
+}
+h1 {
+    font-size: 1.75rem;
+    color: #A10000;
+}
+h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+p {
+    margin-bottom: 1rem;
+}
+ul, ol {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.grid-item {
+    overflow: hidden;
+}
+
+@media (min-width: 640px) {
+    main {
+        padding: 3rem 3rem 4rem;
+    }
+    .grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    }
+}
